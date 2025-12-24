@@ -141,8 +141,8 @@ html {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 40px;
-  color:darkgoldenrod !important;
-  text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
+  color:black !important;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, O.1);
 }
 .hero-area p {
   font-size: 30px;
@@ -276,6 +276,14 @@ p{
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card-button:hover {
+  background-color: rgba(255, 183, 193, 0.7) !important; /* On assombrit un peu */
+  transform: translateY(-2px);               /* Petit effet de soulèvement en bonus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Ajoute une légère ombre au survol */
 }
 
 .card-content{
