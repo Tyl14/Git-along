@@ -5,6 +5,7 @@ body {
     padding: 0; /* Ajustez selon la hauteur de votre navbar */
     background-color: whitesmoke;
     overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* 1. Base de la barre de navigation */
@@ -17,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-right: 50px;
     background-color:rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
@@ -56,6 +57,7 @@ body {
     align-items: center;
     background-color: transparent;
     flex-grow: 1;
+    font-size: 16px;
 }
 
 .navbar-start {
@@ -97,7 +99,7 @@ body {
 .navbar-item.sub {
     padding: 10px 20px;
     font-size: 0.9em;
-    color: #666 !important;
+    color:black !important;
     background-color: transparent !important;
     border-bottom: 1px solid gray;
     display: block;
@@ -109,6 +111,9 @@ body {
 }
 .navbar-item.sub:last-child {
     border-bottom: none;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 .hero-area {
@@ -123,7 +128,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-image: url("https://graphiste.com/blog/wp-content/uploads/sites/4/2018/09/graphiste-techniques-brainstorming-1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://graphiste.com/blog/wp-content/uploads/sites/4/2018/09/graphiste-techniques-brainstorming-1.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -186,7 +191,7 @@ p{
     background-color: whitesmoke;
     padding-bottom: 80px;
     padding-top: 30px;
-border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .content-container-bis{
@@ -195,4 +200,297 @@ border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding-top: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+.hero-area_bis {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://static.vecteezy.com/ti/vecteur-libre/p1/49335041-langue-cours-concept-avec-moderne-plat-conception-pour-la-toile-femme-etudes-en-ligne-et-apprentissage-etranger-langues-parlant-avec-originaire-de-haut-parleurs-a-international-reseau-des-classes-illustration-vectoriel.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.hero-area_bis .block {
+  position: relative;
+  z-index: 999999;
+}
 
+.hero-area_bis h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: lightpink !important;
+  text-shadow: 2px 4px 2px rgba(245, 245, 245, 1);
+}
+
+.content-container_bis{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 183, 193, 0.3);
+    padding-bottom: 50px;
+    padding-top: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    background:transparent;
+    width: 340px;
+    padding: 16px;
+    border-radius: 15px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-img{
+    width: 100%;       /* Prend toute la largeur de la carte */
+    height: 200px;     /* Fixez une hauteur pour l'image */
+    object-fit: cover; /* Recadre l'image proprement sans la déformer */
+    border-radius: 15px ; /* Optionnel : arrondit les coins de l'image */
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card-button{
+  width:100%;
+  padding: 16px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgba(255, 183, 193, 0.4);
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card-content{
+    width: 100%;       /* Prend toute la largeur de la carte */
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;          /* Espace entre le titre et le sous-titre */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-content_title {
+    font-size: 34px;
+    font-weight: 500;
+    color: black;
+    align-self: center; /* Force le titre à se coller à DROITE */
+    border-radius: 100px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 30px;
+}
+
+.card-content_subtitle{
+    font-size: 30px;
+    font-weight: 400;
+    color: dimgray;
+    align-self: center; /* Force le sous-titre à se coller à GAUCHE */
+    font-style: italic;
+}
+
+.hero-area_bis_2 {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.wimi-teamwork.com/static/medias/20944999-scaled.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.hero-area_bis_2 .block {
+  position: relative;
+  z-index: 999999;
+}
+
+.hero-area_bis_2 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:cornflowerblue !important;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0.1);
+}
+
+.content-container_bis_2{
+    display: flex;
+    justify-content: center;
+    background-color:rgba(100, 149, 237, 0.2);
+    padding-bottom: 70px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card-wrap {
+    display: flex;          /* On remet les enfants côte à côte */
+    flex-wrap: wrap;        /* Pour le mobile */
+    justify-content: center; /* On centre les cartes */
+    gap: 50px;              /* L'espace entre les cartes */
+    width: 100%;            /* Prend toute la largeur */
+}
+
+.profil-card{
+    background:transparent;
+    width: 340px;
+    padding: 16px;
+    border-radius: 15px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profil-card_img{
+    width: 300px;       /* Prend toute la largeur de la carte */
+    height: 300px;     /* Fixez une hauteur pour l'image */
+    object-fit: cover; /* Recadre l'image proprement sans la déformer */
+    border-radius: 50% ;
+    overflow: hidden; /* Optionnel : arrondit les coins de l'image */
+    display: block;
+    margin: 0 auto;
+    flex-shrink: 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.profil-card_button{
+  width:100%;
+  padding: 16px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgba(255, 183, 193, 0.4);
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.profil-card_content{
+    width: 100%;       /* Prend toute la largeur de la carte */
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;          /* Espace entre le titre et le sous-titre */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.profil-card_content_title {
+    font-size: 34px;
+    font-weight: 500;
+    color: black;
+    align-self:center; /* Force le titre à se coller à DROITE */
+    text-align: center;
+}
+
+.profil-card_content_title2 {
+    align-self:self-end; /* Force le titre à se coller à DROITE */
+    text-align: center;
+    justify-content: flex-start;
+    margin:0;
+}
+
+.profil-card_content_subtitle{
+    color: dimgray;
+    font-style: italic;
+    text-align: justify;
+    hyphens: auto;
+    padding: 0 15px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.hero-area_bis_3 {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://outilstice.com/wp-content/uploads/2019/04/nuages-de-mots.jpg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.hero-area_bis_3 .block {
+  position: relative;
+  z-index: 999999;
+}
+
+.hero-area_bis_3 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:mediumpurple !important;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.8);
+}
+
+.content-container_bis_3 {
+    display: flex;
+    justify-content: center;
+    background-color:rgba(147, 112, 216, 0.2);
+    padding-bottom: 50px;
+    margin-top: -20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-area_bis_4 {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://img.freepik.com/photos-premium/resume-technologie-moderne-du-developpeur-ecran-code-programmation-langage-programmation-du-script-informatique-arriere-plan-technologique-du-logiciel_505353-445.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.hero-area_bis_4 .block {
+  position: relative;
+  z-index: 999999;
+}
+
+.hero-area_bis_4 h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:white !important;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
+}
