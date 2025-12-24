@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0; /* Ajustez selon la hauteur de votre navbar */
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+/* 1. Base de la barre de navigation */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    font-family: sans-serif;
+    padding-right: 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ .navbar-brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-weight: larger;
+    background-color:transparent;
+ }
+
+ .navbar-title {
+    font-weight: larger;
+    font-size: 28px;
+    line-height: 1.2; /* Réduit l'espace entre les lignes */
+    color: whitesmoke;
+    padding-top: 15px;
+}
+
+.navbar-subtitle {
+    font-size: 20px;
+    color:whitesmoke; /* Couleur un peu plus discrète */
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+/* 2. Alignement horizontal */
+.navbar-menu, .navbar-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.navbar-start {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Style des liens et éléments */
+.navbar-item {
+    position: relative; /* Important pour positionner le menu déroulant */
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 700;
+}
+
+.navbar-item:hover {
+    background-color:rgba(255, 255, 255, 0.4);
+}
+/* 4. Gestion du Menu Déroulant (Dropdown) */
+.navbar-dropdown {
+    display: none; /* Cache le menu par défaut */
+    position: absolute;
+    top: 100%; /* S'affiche juste en dessous du parent */
+    left: 0;
+    background-color:transparent;
+    min-width: 180px;
+    border-radius: 0 0 4px 4px;
+    z-index:200;
+}
+
+/* Affiche le menu quand on survole le parent .is-hoverable */
+.has-dropdown.is-hoverable:hover > .navbar-dropdown {
+    display: block;
+}
+
+/* Style des sous-items */
+.navbar-item.sub {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #666 !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid gray;
+    display: block;
+    width: 100%;
+}
+.navbar-item.sub:hover {
+    background-color: #666 !important; /* Fond légèrement plus gris au survol */
+    color: white !important;               /* Texte qui change de couleur */
+}
+.navbar-item.sub:last-child {
+    border-bottom: none;
+}
+
+.hero-area {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://graphiste.com/blog/wp-content/uploads/sites/4/2018/09/graphiste-techniques-brainstorming-1.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-area .block {
+  position: relative;
+  z-index: 999999;
+}
+.hero-area h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: black !important;
+}
+.hero-area p {
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 32px;
+  color: black;
+}
+
+/* Titre principal */
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    font-weight: 800;      /* Très gras */
+    color: #666 !important;     /* Ta couleur */
+    font-size: 3.5rem;     /* Taille imposante */
+    margin-bottom: 10px;
+    margin-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Pour qu'il ressorte sur l'image */
+}
+
+/* Sous-titre ou titre de section */
+h2 {
+    font-weight: 400;
+    color: dimgray !important;
+    font-size: 1.5rem;     /* Plus grand que 'small' pour rester un titre */
+    letter-spacing: 1px;   /* Un peu d'espace entre les lettres */
+}
+
+h3 {
+    color: dimgray !important;
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+}
+
+.content-container{
+    background-color: whitesmoke;
+    padding-bottom: 80px;
+    padding-top: 30px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.content-container-bis{
+    background-color:rgba(105, 105, 105, 0.2);
+    padding-bottom: 100px;
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
