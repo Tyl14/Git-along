@@ -58,6 +58,7 @@ body {
     background-color: transparent;
     flex-grow: 1;
     font-size: 16px;
+    gap:40px;
 }
 
 .navbar-start {
