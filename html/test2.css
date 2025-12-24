@@ -141,7 +141,8 @@ html {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 40px;
-  color: black !important;
+  color:darkgoldenrod !important;
+  text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
 }
 .hero-area p {
   font-size: 30px;
