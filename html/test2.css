@@ -504,3 +504,25 @@ p{
   color:white !important;
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 1);
 }
+
+.heart-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  height: 100px;   /* Maintenant, ça va fonctionner */
+  padding: 0 !important;
+}
+
+.heart-float {
+  position: absolute;
+  color:greenyellow;
+  animation: float 6s infinite ease-in-out;
+  z-index: 1;
+  width: 100%;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
